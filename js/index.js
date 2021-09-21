@@ -294,10 +294,11 @@ function reveal() {
   }
 
   var ifrm = document.createElement("iframe");
-  ifrm.setAttribute("src", "https://www.youtube.com/embed/q4Bng_nwZ9U");
+  ifrm.setAttribute("src", "https://www.youtube.com/embed/q4Bng_nwZ9U;autoplay=1");
   //ifrm.style.width = `${w}px`;
   //ifrm.style.height = `${h}px`;
   ifrm.style.border = 'none';
+  ifrm.allowFullscreen = true;
   document.querySelector('#video').appendChild(ifrm);
 }
 
